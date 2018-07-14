@@ -8,4 +8,7 @@
     <string name="content_leao">Content do leao</string>
     <string name="content_macaco">Content do macaco</string>
     <string name="txt_escolhe_animal">Escolha um animal</string>
+    <string name="bichano_parada">Parei o bichano !</string>
+    <string name="bichano_pronto">O bichano tá pronto !</string>
+    <string name="bichano_destruido">Destrui o bichano !!</string>
 </resources>
