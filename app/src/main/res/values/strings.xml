@@ -7,5 +7,5 @@
     <string name="content_ovelha">Content da ovelha</string>
     <string name="content_leao">Content do leao</string>
     <string name="content_macaco">Content do macaco</string>
-    <string name="txt_escolhe_animal">Pressione um animal</string>
+    <string name="txt_escolhe_animal">Escolha um animal</string>
 </resources>
