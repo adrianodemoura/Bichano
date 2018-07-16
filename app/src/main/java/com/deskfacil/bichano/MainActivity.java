@@ -8,8 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.HashMap;
-
 public class MainActivity extends AppCompatActivity {
 
     private ImageView cao;
@@ -23,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private static final String TAG = "debugBichano";
 
-    private View.OnClickListener fecharApp = new View.OnClickListener() {
+    private View.OnClickListener fecharApp = new View.OnClickListener()
+    {
         @Override
         public void onClick(View view)
         {
@@ -34,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener tocaPlay = new View.OnClickListener() {
+    private View.OnClickListener tocaPlay = new View.OnClickListener()
+    {
         @Override
         public void onClick(View view)
         {
@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -85,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStart()
+    {
+        Toast.makeText(getApplicationContext(),R.string.bichano_iniciado, Toast.LENGTH_LONG).show();
+        super.onStart();
+    }
+
+    @Override
     protected void onStop()
     {
         Toast.makeText(getApplicationContext(), R.string.bichano_parada, Toast.LENGTH_SHORT).show();
@@ -100,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-
+    protected void onDestroy()
+    {
         if (mediaPlayer.isPlaying())
         {
             mediaPlayer.release();

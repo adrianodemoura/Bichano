@@ -11,4 +11,5 @@
     <string name="bichano_parada">Parei o bichano !</string>
     <string name="bichano_pronto">O bichano tá pronto !</string>
     <string name="bichano_destruido">Destrui o bichano !!</string>
+    <string name="bichano_iniciado">Iniciei o bichano !!</string>
 </resources>
